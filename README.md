@@ -1,3 +1,3 @@
-# Go's-study
+# Learning-Golang
 
-repository to keep exercises while learning Go language.
+Repository to keep exercises while learning Go language.
