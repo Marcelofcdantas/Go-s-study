@@ -27,4 +27,24 @@ func main() {
 
 	array3[1] = "nada"
 	fmt.Println(slice2)
+
+	// arrays internos
+
+	slice3 := make([]float64, 10, 11)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3))
+	fmt.Println(cap(slice3))
+
+	// caso seja definido um slice com tamanho estipulado e este seja extrapolado
+	// o Go cria um novo array com o dobro do tamanho do original
+
+	slice3 = append(slice3, 4)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3))
+	fmt.Println(cap(slice3))
+
+	slice3 = append(slice3, 10)
+	fmt.Println(slice3)
+	fmt.Println(len(slice3))
+	fmt.Println(cap(slice3))
 }
